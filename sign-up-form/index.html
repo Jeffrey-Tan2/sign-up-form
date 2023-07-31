@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="signup.js" defer></script>
+    <div class="banner">
+        <img class="logo" src="logo.png"/>
+        EG Company
+    </div>
+    <img class="background" src="background.jpg"/>
+    <div class="form-area">
+        <div class="form">
+            <div class="intro">
+            This is not a real online service! You know you need something
+            like this in your life to help you realise your deepest dreams.<br>
+            Sign up now to get started. <br><br>
+            You know you want to.
+            </div>
+            <div class="first-name info">
+                <label for="first-name">First name:</label>
+                <input for="first-name"/>
+            </div>
+            <div class="last-name info">
+                <label for="last-name">Last name:</label>
+                <input for="last-name"/>
+            </div>
+            <div class="email info">
+                <label for="email">Email:</label>
+                <input for="email" type="email"/>
+            </div>
+            <div class="phone-number info">
+                <label for="phone-number">Phone number:</label>
+                <input for="phone-number"/>
+            </div>
+            <div id="password" class="password info">
+                <label for="password">Password:</label>
+                <input id="password-input" type="password" onkeyup='passMatch();'/>
+                <div id="not-match"></div>
+            </div>
+            <div id="confirm-pw" class="confirm-pw info">
+                <label for="confirm-pw">Confirm Password:</label>
+                <input id="confirm-pw-input" type="password" onkeyup='passMatch();'/>
+            </div>
+            <div class="bottom">
+                <button>Create account</button>
+                <br><br>
+                Already have an account? <a class="login" href="#">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
